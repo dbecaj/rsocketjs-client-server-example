@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon npm run start",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "rsocket-core": "0.0.19",
+    "rsocket-flowable": "0.0.14",
+    "rsocket-tcp-client": "0.0.19",
+    "rsocket-tcp-server": "0.0.19",
+    "rsocket-types": "0.0.16",
+    "rsocket-websocket-client": "0.0.19",
+    "rsocket-websocket-server": "0.0.19"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "@types/rsocket-core": "0.0.5",
+    "@types/rsocket-types": "0.0.2",
+    "@types/rsocket-websocket-client": "0.0.3"
+  }
+}
