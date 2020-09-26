@@ -54,6 +54,7 @@ const serverOptions: ServerOptions = {
   host: '0.0.0.0',
   port: 3003
 }
+// Middleware for connecting to RSocket server
 app.use(async (req, res, next) => {
   if (socket == undefined) {
     connect(serverOptions).then(
